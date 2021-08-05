@@ -13,12 +13,12 @@
         android:layout_height="200dp"
         android:layout_marginTop="67dp"
         android:layout_marginBottom="84dp"
+        android:contentDescription="@string/tempimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtViewAnswer"
-        app:srcCompat="@drawable/temperature"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/temperature" />
 
     <RadioGroup
         android:id="@+id/radioGroup3"
@@ -32,7 +32,7 @@
             android:id="@+id/radioCelcius"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Celcius"
+            android:text="@string/celcius"
             android:checked="true"
             android:textColor="@color/black" />
 
@@ -40,7 +40,7 @@
             android:id="@+id/radioFarenhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fahrenheit"
+            android:text="@string/fahrenheit"
             android:textColor="@color/black" />
     </RadioGroup>
 
@@ -55,12 +55,12 @@
         android:gravity="center_vertical"
         android:inputType="number"
         android:hint="@string/txt_enter_temp"
-        android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnCal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btnCal"

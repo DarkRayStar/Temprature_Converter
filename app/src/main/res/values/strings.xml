@@ -2,4 +2,7 @@
     <string name="app_name">Temprature Converter</string>
     <string name="txt_enter_temp">Enter the temprature</string>
     <string name="txt_btn_calculate">CALCULATE</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celcius">Celsius</string>
+    <string name="tempimage">tempImage</string>
 </resources>
